@@ -42,6 +42,8 @@ all: $(DEPS)
 
 %.$(SUFFIX):  %.proto
 	mkdir -p $(OUTPUT)
+git commit-m
+
 	$(PROTOC) $(FLAGS) $*.proto
 
 clean:
